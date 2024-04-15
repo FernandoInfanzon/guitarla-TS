@@ -33,15 +33,15 @@ const Header = ({cart,
                         >
                             <img className="img-fluid" src="img/carrito.png" alt="imagen carrito" />
                             <div id="carrito" className="bg-white p-3">
-                                { isEmpty ? <p className="text-center">El carrito esta vacio</p> :
+                                { isEmpty ? <p className="text-center">Empty Cart</p> :
                                 <>
                                 <table className="w-100 table">
                                     <thead>
                                         <tr>
-                                            <th>Imagen</th>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                            <th>Cantidad</th>
+                                            <th>Image</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th>Amount</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -87,8 +87,8 @@ const Header = ({cart,
                                         })}
                                     </tbody>
                                 </table>
-                                <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal}</span></p>
-                                <button className="btn btn-dark w-100 mt-3 p-2" onClick={clearCart}>Vaciar Carrito</button>
+                                <p className="text-end">Total: <span className="fw-bold">${cartTotal}</span></p>
+                                <button className="btn btn-dark w-100 mt-3 p-2" onClick={clearCart}>Empty Cart</button>
                                 </>}
                             </div>
                         </div>
